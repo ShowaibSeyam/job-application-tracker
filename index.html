@@ -44,20 +44,20 @@
             </div>
             <div
                 class="p-4 bg-base-200 rounded-xl border border-base-300 shadow-sm flex flex-col gap-1 hover:shadow-md">
-                <h1 class="text-sm text-base-content/60 font-medium">Interview</h1>
-                <p class="text-3xl font-bold text-success">0</p>
+                <h1  class="text-sm text-base-content/60 font-medium">Interview</h1>
+                <p id="interview-label" class="text-3xl font-bold text-success">0</p>
             </div>
             <div
                 class="p-4 bg-base-200 rounded-xl border border-base-300 shadow-sm flex flex-col gap-1 hover:shadow-md">
-                <h1 class="text-sm text-base-content/60 font-medium">Rejected</h1>
+                <h1 id="rejected-label"class="text-sm text-base-content/60 font-medium">Rejected</h1>
                 <p class="text-3xl font-bold text-error">0</p>
             </div>
         </div>
         <hr>
     </section>
 
-    <section>
-        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6">
+    <section id="all-jobs">
+        <div id="content" class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px]">
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="font-bold text-lg text-base-content">Mobile First Corp</h2>
@@ -72,7 +72,7 @@
                 Remote • Full-time • $130,000 - $175,000
             </div>
 
-            <div class="badge badge-outline mt-3 text-xs font-semibold tracking-wide">
+            <div class="badge badge-ghost mt-3 text-xs font-semibold tracking-wide cursor-pointer hover:text-success">
                 NOT APPLIED
             </div>
 
@@ -82,11 +82,14 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
-        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6">
+
+
+
+        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px]">
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="font-bold text-lg text-base-content">WebFlow Agency</h2>
@@ -101,7 +104,7 @@
                 Los Angeles, CA • Part-time • $80,000 - $120,000
             </div>
 
-            <div class="badge badge-outline mt-3 text-xs font-semibold tracking-wide">
+            <div class="badge badge-ghost mt-3 text-xs font-semibold tracking-wide cursor-pointer hover:text-success">
                 NOT APPLIED
             </div>
 
@@ -111,11 +114,14 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
-        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6">
+
+
+
+        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px]">
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="font-bold text-lg text-base-content">DataViz Solutions</h2>
@@ -130,7 +136,7 @@
                 Boston, MA •Full-time • $125,000 - $165,000
             </div>
 
-            <div class="badge badge-outline mt-3 text-xs font-semibold tracking-wide">
+            <div class="badge badge-ghost mt-3 text-xs font-semibold tracking-wide cursor-pointer hover:text-success">
                 NOT APPLIED
             </div>
 
@@ -140,11 +146,14 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
-        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6">
+
+
+
+        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px]">
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="font-bold text-lg text-base-content">Innovation Labs</h2>
@@ -163,7 +172,7 @@
                 $110,000 - $150,000
             </div>
 
-            <div class="badge badge-outline mt-3 text-xs font-semibold tracking-wide">
+            <div class="badge badge-ghost mt-3 text-xs font-semibold tracking-wide cursor-pointer hover:text-success">
                 NOT APPLIED
             </div>
 
@@ -173,12 +182,13 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
-        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6">
+
+        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px] ">
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="font-bold text-lg text-base-content">MegaCorp Solutions</h2>
@@ -197,7 +207,7 @@
                 $130,000 - $170,00
             </div>
 
-            <div class="badge badge-outline mt-3 text-xs font-semibold tracking-wide">
+            <div class="badge badge-ghost mt-3 text-xs font-semibold tracking-wide cursor-pointer hover:text-success">
                 NOT APPLIED
             </div>
 
@@ -207,11 +217,13 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
-        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6">
+
+
+        <div class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px]">
             <div class="flex justify-between items-start">
                 <div>
                     <h2 class="font-bold text-lg text-base-content">StartupXYZ</h2>
@@ -230,7 +242,7 @@
                 $120,000 - $160,000
             </div>
 
-            <div class="badge badge-outline mt-3 text-xs font-semibold tracking-wide">
+            <div class="badge badge-ghost mt-3 text-xs font-semibold tracking-wide cursor-pointer hover:text-success">
                 NOT APPLIED
             </div>
 
@@ -240,13 +252,15 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
     </section>
 
     <script src="./script/allJobs.js"></script>
+    <script src="./script/interview.js"></script>
+    <script src="./script/rejected.js"></script>
 
 </body>
 
