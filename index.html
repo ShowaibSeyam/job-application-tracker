@@ -64,9 +64,9 @@
         </div>
 
         <div class="buttons flex gap-3 mb-[16px]">
-            <button class="btn btn-primary btn-sm p-[10px]">All</button>
-            <button class="btn btn-ghost bg-base-200 btn-sm">Interview</button>
-            <button class="btn btn-ghost btn-sm bg-base-200 p-[10px]">Rejected</button>
+            <button onclick="showOnly('all-jobs')" class="btn btn-primary btn-sm p-[10px]">All</button>
+            <button onclick="showOnly('interview')" class="btn btn-ghost bg-base-200 btn-sm">Interview</button>
+            <button onclick="showOnly('rejected')" class="btn btn-ghost btn-sm bg-base-200 p-[10px]">Rejected</button>
         </div>
     </section>
 
@@ -76,7 +76,7 @@
 
 
 
-    <section class="all-jobs sm:mx-4">
+    <section id="all-jobs">
         <div id="content" class="card bg-base-100 border border-base-300 shadow-sm rounded-xl p-6 mb-[30px]">
             <div class="flex justify-between items-start">
                 <div>
@@ -102,7 +102,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -134,7 +134,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -166,7 +166,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -202,7 +202,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -237,7 +237,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -271,7 +271,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -304,7 +304,7 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
@@ -337,16 +337,34 @@
             </p>
 
             <div class="flex gap-2 mt-4">
-                <button id="interview" class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
+                <button class="btn btn-sm btn-outline btn-success">INTERVIEW</button>
                 <button class="btn btn-sm btn-outline btn-error">REJECTED</button>
             </div>
         </div>
 
     </section>
 
+
+
+    <section id="interview">
+        <div class="flex flex-col justify-center items-center">
+            <img src="jobs.png" alt="">
+            <h1 class="font-semibold text-[24px]">No jobs available</h1>
+            <p class="font-normal text-[16px]">Check back soon for new job opportunities</p>
+        </div>
+    </section>
+    <section id="rejected">
+        <div class="flex flex-col justify-center items-center">
+            <img src="jobs.png" alt="">
+            <h1 class="font-semibold text-[24px]">No jobs available</h1>
+            <p class="font-normal text-[16px]">Check back soon for new job opportunities</p>
+        </div>
+    </section>
+
     <script src="./script/allJobs.js"></script>
     <script src="./script/interview.js"></script>
     <script src="./script/rejected.js"></script>
+    <script src="./script/machine.js"></script>
 
 </body>
 
