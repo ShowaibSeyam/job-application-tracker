@@ -40,7 +40,7 @@
             <div
                 class="p-4 bg-base-200 rounded-xl border border-base-300 shadow-sm flex flex-col gap-1 hover:shadow-md">
                 <h1 id="jobs-count" class="text-sm text-base-content/60 font-medium">Total</h1>
-                <p class="text-3xl font-bold text-primary">8</p>
+                <p id="total-label" class="text-3xl font-bold text-primary">0</p>
             </div>
             <div
                 class="p-4 bg-base-200 rounded-xl border border-base-300 shadow-sm flex flex-col gap-1 hover:shadow-md">
@@ -49,8 +49,8 @@
             </div>
             <div
                 class="p-4 bg-base-200 rounded-xl border border-base-300 shadow-sm flex flex-col gap-1 hover:shadow-md">
-                <h1 id="rejected-label" class="text-sm text-base-content/60 font-medium">Rejected</h1>
-                <p class="text-3xl font-bold text-error">0</p>
+                <h1 class="text-sm text-base-content/60 font-medium">Rejected</h1>
+                <p id="rejected-label" class="text-3xl font-bold text-error">0</p>
             </div>
         </div>
         <hr>
@@ -60,7 +60,7 @@
         <div class="flex justify-between">
             <h1 class="font-semibold text-xl mb-[24px]">Available Jobs</h1>
         
-            <span class="text-sm text-base-content/60"><span id="jobs-count">8</span> jobs</span>
+            <span class="text-sm text-base-content/60"><span id="jobs-count-label">0</span> jobs</span>
         </div>
 
         <div class="buttons flex gap-3 mb-[16px]">
@@ -346,19 +346,23 @@
 
 
 
-    <section id="interview">
-        <div class="flex flex-col justify-center items-center">
+    <section id="interview" class="hidden">
+        <div class="empty-state flex flex-col justify-center items-center shadow-sm bg-base-100 rounded-sm px-[60px] py-[40px]">
             <img src="jobs.png" alt="">
             <h1 class="font-semibold text-[24px]">No jobs available</h1>
             <p class="font-normal text-[16px]">Check back soon for new job opportunities</p>
         </div>
+        <div id="interview-container"></div>
     </section>
-    <section id="rejected">
-        <div class="flex flex-col justify-center items-center">
+
+
+    <section id="rejected" class="hidden">
+        <div class="empty-state flex flex-col justify-center items-center shadow-sm bg-base-100 rounded-sm px-[60px] py-[40px]">
             <img src="jobs.png" alt="">
             <h1 class="font-semibold text-[24px]">No jobs available</h1>
             <p class="font-normal text-[16px]">Check back soon for new job opportunities</p>
         </div>
+        <div id="rejected-container"></div>
     </section>
 
     <script src="./script/allJobs.js"></script>

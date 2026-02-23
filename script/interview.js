@@ -1,17 +1,26 @@
-let count = 0;
+{
+  let count = 0;
 
-const interviewButtons = document.querySelectorAll(".btn-success");
+  const interviewButtons = document.querySelectorAll(".btn-success");
 
-interviewButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    const card = button.closest(".card");
-    const badge = card.querySelector(".badge");
+  interviewButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const card = button.closest(".card");
 
-    if (card.dataset.interviewed === "true") return;
+      if (card.dataset.decided === "true") return;
 
-    card.dataset.interviewed = "true";
-    count += 1;
+      card.dataset.decided = "true";
+      count += 1;
 
-    document.getElementById("interview-label").textContent = count;
+      document.getElementById("interview-label").textContent = count;
+
+      // decrease total
+      const total = parseInt(document.getElementById("total-label").textContent);
+      document.getElementById("total-label").textContent = total - 1;
+      document.getElementById("jobs-count-label").textContent = total - 1;
+
+    document.getElementById("interview-container").appendChild(card);
+    document.querySelector("#interview .empty-state").classList.add("hidden");
+    });
   });
-});
+}
