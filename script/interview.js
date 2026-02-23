@@ -19,6 +19,13 @@
       document.getElementById("total-label").textContent = total - 1;
       document.getElementById("jobs-count-label").textContent = total - 1;
 
+      //change badge
+        const badge= card.querySelector(".badge");
+        badge.textContent = "INTERVIEW";
+        badge.classList.remove("badge-ghost");
+        badge.classList.add("badge-success");
+      
+
     document.getElementById("interview-container").appendChild(card);
     document.querySelector("#interview .empty-state").classList.add("hidden");
     });

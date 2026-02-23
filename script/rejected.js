@@ -19,6 +19,11 @@
       document.getElementById("total-label").textContent = total - 1;
       document.getElementById("jobs-count-label").textContent = total - 1;
 
+      const badge = card.querySelector(".badge");
+      badge.textContent = "REJECTED";
+      badge.classList.remove("badge-ghost");
+      badge.classList.add("badge-error");
+
       document.getElementById("rejected-container").appendChild(card);
       document.querySelector("#rejected .empty-state").classList.add("hidden");
 
