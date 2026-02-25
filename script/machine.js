@@ -19,4 +19,17 @@ function showOnly(id, clickedBtn){
     //id wala element ta ke show korbo
     const selected = document.getElementById(id);
     selected.classList.remove("hidden");
+
+
+  
 }
+function updateCount() {
+    const totalCards = document.querySelectorAll("#all-jobs .card").length;
+    document.getElementById("jobs-count-label").textContent = totalCards;
+    document.getElementById("total-label").textContent = totalCards; 
+}
+  function deleteCard(btn){
+        const card = btn.closest('.card');
+        card.remove();
+        updateCount();
+    }
